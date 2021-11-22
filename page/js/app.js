@@ -1,20 +1,19 @@
+// let dateStart = new Date("11/22/2021");
 let today = new Date();
-let dateStart = new Date("11/22/2021");
 let dateEnd = new Date("12/19/2021");
 
-
-let milisegundosDia = 24 * 60 * 60 * 1000;
-let milisegundosTranscurridos = Math.abs(dateStart.getTime() - today.getTime());
-let diasTranscurridos = Math.round(milisegundosTranscurridos / milisegundosDia);
+var diasTranscurridos = Math.floor(( today.getTime() - dateEnd.getTime()) / 86400000 + 28)
+console.log(diasTranscurridos);
+///
 
 
 var text = document.createElement("P");
 
-if (diasTranscurridos < 27) {
+if (diasTranscurridos < 28) {
     text.innerHTML = "<p>Today is day <span class='date'>" + diasTranscurridos + "</span> of the challenge</p>";
-} else if (diasTranscurridos == 27) {
+} else if (diasTranscurridos == 28) {
     text.innerHTML = "<p>Last day of the challenge 🏁</p>";
-} else if (diasTranscurridos > 27) {
+} else if (diasTranscurridos > 28) {
     text.innerHTML = "<p>The challenge is over 💚</p>";
 }
 
