@@ -1,8 +1,13 @@
 {
   "dependencies": {
-    "netlify": "^8.0.4"
   },
   "scripts": {
     "prod": "netlify deploy --prod -d page"
-  }
+  },
+  "name": "y",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Jussef/WidgetsNotion-WhatDayIsIt.git",
+  "author": "Jussef <jussef.daniel@gmail.com>",
+  "license": "MIT"
 }

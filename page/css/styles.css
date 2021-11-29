@@ -1,4 +1,10 @@
+html, body {
+    background-color: white;
+    overflow: hidden;
+}
+
 .container{
+    background-color: white;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -9,8 +15,9 @@
 }
 
 .section{
-    font-family: roboto;
+    font-family:'Roboto', sans-serif;
     font-size: 2rem;
+    text-align: center;
 }
 .date{
     color: #dc58b2;
